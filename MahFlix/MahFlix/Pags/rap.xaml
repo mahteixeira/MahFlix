@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MahFlix.Pags.rap">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Grid ColumnDefinitions="*,*" RowDefinitions="300,200,*" >
+                    <WebView x:Name="visualizador"
+                         Grid.ColumnSpan="2"
+                         Source="https://www.youtube.com/watch?v=JUm0fQzWEiU"
+                         Grid.Row="0" Grid.Column="0"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Red"/>
+                    <Image x:Name="rap1" Grid.Row="1" Grid.Column="0"/>
+                    <StackLayout Grid.Column="1" Grid.Row="1" VerticalOptions="Center">
+                        <Label Text="BARBIE RAPUNZEL" TextColor="#ec4498" FontAttributes="Bold"/>
+                        <Label Text="Livre para todos os públicos" />
+
+                    </StackLayout>
+
+                    <Label Margin="20,0,0,0" Grid.Row="2" Grid.ColumnSpan="2" Text="Há muito tempo atrás, numa época de mágicos e dragões, vivia uma jovem bela e talentosa de dezessete anos chamada Rapunzel, que tinha os mais belos e radiantes cabelos que alguém havia visto. Mas a vida de Rapunzel estava longe da perfeição, pois vivia como serviçal e prisioneira de Gothel, uma bruxa muito poderosa, ciumenta e possessiva. Ela mantinha Rapunzel escondida numa floresta proibida, guardada por um enorme dragão, Hugo, e cercada por um muro de vidro encantado. Porém, num capricho do destino, Rapunzel descobre um pincel mágico que a leva numa jornada pela verdade que desvendará intrigas e trará paz ao reino e finalmente levando-a a se apaixonar pelo belo Príncipe Stefan. Barbie Rapunzel mostra que o amor e a imaginação podem mudar o mundo."/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

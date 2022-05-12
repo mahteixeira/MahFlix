@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MahFlix.Pags.fairytopia">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Grid ColumnDefinitions="*,*" RowDefinitions="300,200,*" >
+                    <WebView x:Name="visualizador"
+                         Grid.ColumnSpan="2"
+                         Source="https://www.youtube.com/watch?v=79Olqu3YJ4c"
+                         Grid.Row="0" Grid.Column="0"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Red"/>
+                    <Image x:Name="fada" Grid.Row="1" Grid.Column="0"/>
+                    <StackLayout Grid.Column="1" Grid.Row="1" VerticalOptions="Center">
+                        <Label Text="BARBIE FAIRYTOPIA" TextColor="#ec4498" FontAttributes="Bold"/>
+                        <Label Text="Livre para todos os públicos" />
+
+                    </StackLayout>
+
+                    <Label Margin="20,0,0,0" Grid.Row="2" Grid.ColumnSpan="2" Text="Logo após o arco-íris, em um mundo chamado Fairytopia, vive Elina, uma bela fada das flores que sonha em ter asas. Um dia, Elina percebe que sua casa de flor está doente e seus amigos não podem mais voar. Cheia de coragem, ela parte em uma fantástica jornada para encontrar Azura, a guardiã da Cidade das Fadas, já que ela não é afetada pelo feitiço que causou todos os problemas."/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MahFlix.Pags.pobre">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Grid ColumnDefinitions="*,*" RowDefinitions="300,200,*" >
+                    <WebView x:Name="visualizador"
+                         Grid.ColumnSpan="2"
+                         Source="https://www.youtube.com/watch?v=V5P6rMgkn3g"
+                         Grid.Row="0" Grid.Column="0"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Red"/>
+                    <Image x:Name="plebe" Grid.Row="1" Grid.Column="0"/>
+                    <StackLayout Grid.Column="1" Grid.Row="1" VerticalOptions="Center">
+                        <Label Text="BARBIE EM A PRINCESA E A PLEBEIA" TextColor="#ec4498" FontAttributes="Bold"/>
+                        <Label Text="Livre para todos os públicos" />
+
+                    </StackLayout>
+
+                    <Label Margin="20,0,0,0" Grid.Row="2" Grid.ColumnSpan="2" Text="Uma plebeia, moradora de um vilarejo, é muito parecida com a princesa do reino. Os destinos das duas se cruzam quando a princesa é sequestrada, e a moça humilde usa sua incrível semelhança com ela para tentar salvar das mãos do vilão."/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

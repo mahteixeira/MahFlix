@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MahFlix.Pags.aladus">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Grid ColumnDefinitions="*,*" RowDefinitions="300,200,*" >
+                    <WebView x:Name="visualizador"
+                         Grid.ColumnSpan="2"
+                         Source="https://www.youtube.com/watch?v=ayrgQt6yP2w"
+                         Grid.Row="0" Grid.Column="0"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Red"/>
+                    <Image x:Name="cavalo" Grid.Row="1" Grid.Column="0"/>
+                    <StackLayout Grid.Column="1" Grid.Row="1" VerticalOptions="Center">
+                        <Label Text="BARBIE E A MAGIA DE ALADUS" TextColor="#ec4498" FontAttributes="Bold"/>
+                        <Label Text="Livre para todos os públicos" />
+
+                    </StackLayout>
+
+                    <Label Margin="20,0,0,0" Grid.Row="2" Grid.ColumnSpan="2" Text="Ao completar 17 anos, a princesa Anika é pedida em casamento por um bruxo malvado e, diante de sua recusa, ele transforma os pais da moça e todos os súditos do reino em estátuas de gelo. Um cavalo alado aparece para ajudá-la a quebrar o feitiço."/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

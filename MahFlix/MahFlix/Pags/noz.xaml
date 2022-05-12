@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MahFlix.Pags.noz">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Grid ColumnDefinitions="*,*" RowDefinitions="350,200,*" >
+                    <WebView x:Name="castanha"
+                         Grid.ColumnSpan="2"
+                         Source="https://www.youtube.com/watch?v=CbZBDH6FuhQ"
+                         Grid.Row="0" Grid.Column="0"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Red"/>
+                    <Image x:Name="naz" Grid.Row="1" Grid.Column="0"/>
+                    <StackLayout Grid.Column="1" Grid.Row="1" VerticalOptions="Center">
+                        <Label Text="BARBIE E O QUEBRA NOZES" TextColor="#ec4498" FontAttributes="Bold"/>
+                        <Label Text="Livre para todos os públicos" />
+
+                    </StackLayout>
+
+                    <Label Margin="20,0,0,0" Grid.Row="2" Grid.ColumnSpan="2" Text="Clara ganha um lindo soldadinho de madeira de sua tia favorita. Na mesma noite, o soldado ganha vida para protege-la do Rato Rei, que invade sua sala. Ela acorda e ajuda o Quebra-Nozes, mas o Rato Rei a encolhe com uma terrível magia. Então, os dois se envolvem em uma espetacular aventura pera encontrar a Princesa Caramelo, a única que pode quebrar o diabólico feitiço."/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

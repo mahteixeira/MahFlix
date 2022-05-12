@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MahFlix.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+            <Image x:Name="logo"  />
+            <Grid ColumnDefinitions="*,*" RowDefinitions="300,300,300,*,*">
+                <ImageButton x:Name="btnNoz" Clicked="btnNoz_Clicked" Aspect="Fill" Grid.Row="0" Grid.Column="0"/>
+                <ImageButton x:Name="btnRap" Clicked="btnRap_Clicked" Aspect="Fill" Grid.Row="0" Grid.Column="1"/>
+                <ImageButton x:Name="btnCisne" Clicked="btnCisne_Clicked" Aspect="Fill" Grid.Row="1" Grid.Column="0"/>
+                <ImageButton x:Name="btnPlebe" Clicked="btnPlebe_Clicked" Aspect="Fill" Grid.Row="1" Grid.Column="1"/>
+                <ImageButton x:Name="btnFada" Clicked="btnFada_Clicked" Aspect="Fill" Grid.Row="2" Grid.Column="0"/>
+                <ImageButton x:Name="btnPega" Clicked="btnPega_Clicked" Aspect="Fill" Grid.Row="2" Grid.Column="1"/>
+
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
